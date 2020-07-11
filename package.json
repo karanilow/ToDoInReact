@@ -1,0 +1,13 @@
+{
+  "name": "ToDOinReact",
+  "version": "1.0.0",
+  "description": "a to do list full stack",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "react-scripts test",
+    "start:server": "cd server && node_modules/.bin/nodemon server.js --exec babel-node --presets es2015,stage-0",
+    "start:client": "cd client && yarn start",
+    "start:dev": "concurrently \"yarn start:server\" \"yarn start:client\""
+  }
+}

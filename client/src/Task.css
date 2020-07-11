@@ -1,0 +1,22 @@
+.App > .tasks > .task.default,
+.App > .tasks > .task.isSelected {
+  background: whitesmoke;
+  outline: 0.08em solid silver;
+  margin: 0.2em;
+}
+
+.App > .tasks > .task.isSelected {
+  outline-color: red;
+}
+.App > .tasks > .task.isNotSelected {
+  outline-color: silver;
+}
+
+.App > .tasks > .task.finished {
+  background-color: green;
+  margin: 0.2em;
+}
+
+button {
+  border-radius: 50%;
+}

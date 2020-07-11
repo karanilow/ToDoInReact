@@ -1,0 +1,142 @@
+.container {
+  box-sizing: border-box;
+  padding: 25px;
+  width: 100%;
+  height: 800px;
+}
+.container > .row {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: left;
+  padding-left: 150px;
+}
+.controls {
+  box-sizing: border-box;
+  flex: 30%;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+#delete,
+#finish {
+  background-color: rgb(241, 241, 241);
+  color: black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid rgb(228, 84, 84);
+  display: block;
+  font-size: 20px;
+  box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 75px;
+  margin: 13px;
+}
+#delete:hover {
+  background-color: rgb(228, 84, 84);
+}
+#delete:active,
+#finish:active {
+  border: 1px solid rgb(241, 241, 241);
+}
+#finish {
+  border: 1px solid rgb(137, 238, 123);
+}
+#finish:hover {
+  background-color: rgb(137, 238, 123);
+}
+
+.tasks {
+  box-sizing: border-box;
+  flex: 70%;
+  padding: 20px;
+  overflow: auto;
+  max-width: 700px;
+}
+
+.tasks h2 {
+  font-weight: 300;
+}
+.singleTask {
+  display: flex;
+}
+
+.singleTaskName {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  border: 0.08em solid silver;
+  border-radius: 20px;
+}
+
+.default {
+  background: whitesmoke;
+  margin: 0.2em;
+}
+.finished {
+  background-color: rgb(137, 238, 123);
+  margin: 0.2em;
+}
+.isSelected {
+  border-color: red;
+}
+.isNotSelected {
+  border-color: silver;
+}
+
+.time {
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #999;
+}
+
+.form {
+  box-sizing: border-box;
+  flex: 100%;
+  padding: 20px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+.form h2 {
+  font-weight: 300;
+}
+
+.form form {
+  align-items: baseline;
+}
+
+.form input {
+  height: 30px;
+  padding-left: 10px;
+  border: 2px solid #c1c1c1;
+  margin-right: 10px;
+  border-radius: 20px;
+  flex: 3;
+  box-sizing: border-box;
+}
+
+.form input:first-child {
+  flex: 1;
+}
+
+.form input:focus {
+  border: 2px solid #385997;
+}
+
+.form button {
+  color: #999;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+.form button:hover {
+  cursor: pointer;
+  color: #385997;
+  border-color: #385997;
+}

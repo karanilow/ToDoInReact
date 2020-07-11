@@ -1,0 +1,30 @@
+p {
+  padding-left: 20px;
+}
+.newTaskInput {
+  display: block;
+}
+.dropdown {
+  position: relative;
+  display: block;
+  margin-left: 200px;
+}
+
+#options:hover {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-color: #f1f1f173;
+  min-width: 250px;
+  box-shadow: 0 8 16 0 rgba(0, 0, 0, 0.2);
+  align-items: baseline;
+}
+
+.visible {
+  visibility: visible;
+}

@@ -1,0 +1,23 @@
+nav {
+  border-bottom: 1px solid black;
+}
+
+.crumbs ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.crumb {
+  display: inline-block;
+}
+
+ol button {
+  border: none;
+  background-color: transparent;
+}
+
+ol button:hover {
+  cursor: pointer;
+  color: #385997;
+  border-bottom: 1px solid;
+}
