@@ -26,6 +26,7 @@ const TaskBox = (props) => {
     <div>
       <TaskPill
         currentGroup={props.currentGroup}
+        handlePillsClick={props.handlePillsClick}
         taskList={props.data}
         home={props.home}
       />
@@ -48,6 +49,7 @@ TaskBox.propTypes = {
   ),
   handleTaskClick: PropTypes.func.isRequired,
   handleIconClick: PropTypes.func.isRequired,
+  handlePillsClick: PropTypes.func.isRequired,
   isTaskSelected: PropTypes.func.isRequired,
   currentGroup: PropTypes.object.isRequired,
   home: PropTypes.object.isRequired,

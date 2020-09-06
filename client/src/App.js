@@ -57,8 +57,18 @@ class App extends Component {
 
   // Arrow fx for binding
   handleIconClick = (id) => {
-    const { currentGroup, taskList, selectedTasksId } = this.state;
-    currentGroup._id === id
+    const { taskList, selectedTasksId } = this.state;
+    this.setState({
+      currentGroup: taskList.find((task) => task._id === id),
+    });
+    selectedTasksId.length = 0;
+    this.setState({ selectedTasksId });
+  };
+
+  // Arrow fx for binding
+  handlePillsClick = (id) => {
+    const { taskList, selectedTasksId } = this.state;
+    id === "root"
       ? this.setState({ currentGroup: this.home })
       : this.setState({
           currentGroup: taskList.find((task) => task._id === id),
@@ -66,9 +76,6 @@ class App extends Component {
     selectedTasksId.length = 0;
     this.setState({ selectedTasksId });
   };
-
-  // Arrow fx for binding
-  handlePillsClick = (id) => {};
 
   sortedIndex(array, value) {
     var low = 0,
@@ -229,6 +236,7 @@ class App extends Component {
             <TaskBox
               handleTaskClick={this.handleTaskClick}
               handleIconClick={this.handleIconClick}
+              handlePillsClick={this.handlePillsClick}
               isTaskSelected={this.isTaskSelected}
               data={this.state.taskList}
               currentGroup={this.state.currentGroup}

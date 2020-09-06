@@ -9,15 +9,19 @@ class TaskPill extends React.Component {
   }
 
   getParentsTreeFrom(id) {
+    if (this.props.currentGroup._id === "root") {
+      return [];
+    }
+
     const taskList = this.props.taskList;
     var tree = [];
-    tree[0] = this.props.home;
     var parent = taskList.find((task) => task._id === id);
 
     while (parent !== undefined) {
-      tree.push(parent);
+      tree.unshift(parent);
       parent = taskList.find((task) => task._id === parent.partOfGroup);
     }
+    tree.unshift(this.props.home);
 
     return tree;
   }
@@ -31,7 +35,9 @@ class TaskPill extends React.Component {
           <ol>
             {pill.map((parent, index) => (
               <li className="crumb" key={index}>
-                <button>{parent.name} ></button>
+                <button onClick={() => this.props.handlePillsClick(parent._id)}>
+                  {parent.name} >
+                </button>
               </li>
             ))}
           </ol>
@@ -43,6 +49,7 @@ class TaskPill extends React.Component {
 
 TaskPill.propTypes = {
   currentGroup: PropTypes.object.isRequired,
+  handlePillsClick: PropTypes.func.isRequired,
   taskList: PropTypes.array.isRequired,
   home: PropTypes.object.isRequired,
 };
