@@ -10,12 +10,15 @@ Tis is a simple 'To do list' app created with Node.js, React.js, and a Mongo dat
 - See list in the middle
 - Lists in lists enable
 
+![APP](https://github.com/karanilow/ToDoInReact/blob/master/img/Introduction.png)
+
 ## Table of content
 
 - [Description](#Description)
 - [Technologies](#Technologies)
 - [Setup](#Setup)
-- [sources](#Source)
+- [Example](#Example)
+- [Sources](#Source)
 
 ### Description
 
@@ -104,6 +107,18 @@ Complete the code with the relevant information
 | <database_name> | the database's name on your Mongo Db Atlas      |
 
 🥳 Finished !
+
+### Example
+
+First list is call Home by default.
+Your first tasks will be added here and configured as being a list themselves or not :
+![Home](https://github.com/karanilow/ToDoInReact/blob/master/img/Home.png)
+
+Then you can naviguate between list using the list icons and the navigation bar:
+![Home](https://github.com/karanilow/ToDoInReact/blob/master/img/ListInList.png)
+
+By default, the new task will be added to the list you are currently watching. If you want to add the new task to another list, without having to navigate, you can do it via the option menu:
+![Home](https://github.com/karanilow/ToDoInReact/blob/master/img/Input.png)
 
 ### Source
 
