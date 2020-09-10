@@ -85,7 +85,7 @@ class TaskInput extends Component {
                   ref={this.selectRef}
                   defaultValue={this.props.currentGroup._id}
                   name="select"
-                  id="partOfGroups"
+                  id="partOfGroup"
                 >
                   <optgroup label="Current group">
                     <option value={this.props.currentGroup._id}>

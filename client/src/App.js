@@ -147,7 +147,7 @@ class App extends Component {
       exTaskList.splice(exTaskList.indexOf(task), 1);
       if (task.isTaskGroup) {
         var otherRelatives = exTaskList.filter((t) =>
-          t.partOfGroups.includes(task._id)
+          t.partOfGroup.includes(task._id)
         );
         while (otherRelatives.length > 0) {
           const relative = otherRelatives.pop();
@@ -155,7 +155,7 @@ class App extends Component {
           if (relative.isTaskGroup) {
             exTaskList.splice(exTaskList.indexOf(relative), 1);
             let newOtherRelatives = exTaskList.filter((t) =>
-              t.partOfGroups.includes(relative._id)
+              t.partOfGroup.includes(relative._id)
             );
             otherRelatives = [...otherRelatives, ...newOtherRelatives];
           }

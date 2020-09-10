@@ -7,7 +7,7 @@ const data = [
     updatedAt: new Date(),
     updatedBy: "Bryan",
     isTaskGroup: false,
-    partOfGroups: ["root"],
+    partOfGroup: ["root"],
     status: "default",
   },
   {
@@ -18,7 +18,7 @@ const data = [
     updatedAt: new Date(),
     updatedBy: "You",
     isTaskGroup: false,
-    partOfGroups: ["root"],
+    partOfGroup: ["root"],
     status: "finished",
   },
   {
@@ -29,7 +29,7 @@ const data = [
     updatedAt: new Date(),
     updatedBy: "Bryan",
     isTaskGroup: true,
-    partOfGroups: ["root"],
+    partOfGroup: ["root"],
     status: "default",
   },
   {
@@ -40,7 +40,7 @@ const data = [
     updatedAt: new Date(),
     updatedBy: "You",
     isTaskGroup: false,
-    partOfGroups: ["g1"],
+    partOfGroup: ["g1"],
     status: "default",
   },
   {
@@ -51,7 +51,7 @@ const data = [
     updatedAt: new Date(),
     updatedBy: "You",
     isTaskGroup: false,
-    partOfGroups: ["root", "g1"],
+    partOfGroup: ["root", "g1"],
     status: "finished",
   },
 ];
