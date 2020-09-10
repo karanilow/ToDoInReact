@@ -1,6 +1,6 @@
 # To do list - MERN app
 
-![MERN](https://github.com/karanilow/ToDoInReact/img/MERN.png)
+![MERN](https://github.com/karanilow/ToDoInReact/blob/master/img/MERN.png)
 
 ![Yarn Version](https://badgen.net/npm/v/yarn)
 
