@@ -4,7 +4,7 @@
 
 ![Yarn Version](https://badgen.net/npm/v/yarn)
 
-Tis is a simple 'To do list' app created with Node.js, React.js, and a Mongo database.
+This is a simple 'To do list' app created with Node.js, React.js, and a Mongo database.
 
 - Type some tasks
 - See list in the middle
@@ -22,7 +22,7 @@ Tis is a simple 'To do list' app created with Node.js, React.js, and a Mongo dat
 
 ### Description
 
-This is a project for training purposes. The incenture is to apply and experiment materials frome online courses : [Develop in Node.js](https://openclassrooms.com/fr/courses/1056721-des-applications-ultra-rapides-avec-node-js) (in French), [Create a web app using React](https://openclassrooms.com/fr/courses/4664381-realisez-une-application-web-avec-react-js) (in French).
+This is a project for training purposes. The indenture is to apply and experiment materials from online courses : [Develop in Node.js](https://openclassrooms.com/fr/courses/1056721-des-applications-ultra-rapides-avec-node-js) (in French), [Create a web app using React](https://openclassrooms.com/fr/courses/4664381-realisez-une-application-web-avec-react-js) (in French).
 
 ### Technologies
 
@@ -75,7 +75,7 @@ This app uses MongoDB Atlas.
 
 1. Create a secret file
 2. Copy and paste some code
-3. Add your access datails
+3. Add your access details
 
 Create a secret file:
 For Linux systems
